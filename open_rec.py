@@ -12,7 +12,6 @@ SCHEDULE_CONTAINER_ID = 'offering-collapse-1'
 
 def parse_dates(date_str):
     """Parse date strings and return a list of dates for multi-day events."""
-    """Parse date strings and return a list of dates for multi-day events."""
     if '-' in date_str:
         start_date_str, end_date_str = date_str.split(' - ')
         start_date = datetime.strptime(start_date_str, '%a, %b %d %Y')
